@@ -1,0 +1,178 @@
+/* CSS global content*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", -apple-system, "Segoe UI", Roboto, Ubuntu, "Open Sans";
+  font-size: 10px;
+}
+
+body {
+  background-color: #fdfdfd;
+  color: #011518;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode-active {
+  background-color: #011518;
+  color: #fdfdfd;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.enable {
+  display: table;
+}
+
+.disable {
+  display: none;
+  transition: display 0.3s;
+}
+
+/* CSS for search content*/
+.main--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+}
+.main--container .main--mode {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+}
+.main--container .main--mode:hover {
+  transform: scale(1.2);
+}
+.main--container .main--mode .button-light-mode svg {
+  width: 33px;
+  height: 33px;
+  fill: #FFC107;
+}
+.main--container .main--mode .button-dark-mode svg {
+  width: 33px;
+  height: 33px;
+  fill: #011518;
+}
+.main--container .main--container-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  text-align: center;
+  padding-bottom: 25px;
+}
+.main--container .main--container-search .main--container-tittle {
+  padding-bottom: 30px;
+}
+.main--container .main--container-search .main--container-tittle h1, .main--container .main--container-search .main--container-tittle h1 span {
+  font-family: "Lilita One", cursive, -apple-system, "Segoe UI", Roboto, "Helvetica Neue";
+  font-size: 5rem;
+}
+.main--container .main--container-search .main--container-tittle h1 span {
+  display: inline-block;
+  width: 255px;
+  text-align: left;
+}
+.main--container .main--container-search .main--container-tittle h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+.main--container .main--container-search .main--container-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 541px;
+  height: 44px;
+  background-color: #fdfdfd;
+  border-radius: 24px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.2784313725);
+  padding: 0 15px;
+  overflow: hidden;
+  contain: content;
+}
+.main--container .main--container-search .main--container-input input {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: 0;
+  outline: 0;
+  padding: 0 10px;
+  font-size: 1.4rem;
+  color: #011518;
+}
+.main--container .main--container-search .main--container-input svg {
+  width: 16px;
+  height: 16px;
+  fill: #5f6368;
+  position: relative;
+}
+
+.table--search-result, .table--result-boss {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: inherit;
+  border: 2px solid rgba(32, 33, 36, 0.2784313725);
+  background-color: #fdfdfd;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  margin-bottom: 15px;
+  overflow: hidden;
+  text-align: center;
+  contain: content;
+}
+.table--search-result th, .table--result-boss th, .table--search-result td, .table--result-boss td {
+  padding: 10px;
+  font-size: 1.3rem;
+  border-bottom: 2px solid rgba(32, 33, 36, 0.2784313725);
+}
+.table--search-result td, .table--result-boss td {
+  padding: 3px 5px;
+  border-bottom: 2px solid rgba(32, 33, 36, 0.2784313725);
+}
+.table--search-result tbody:hover, .table--result-boss tbody:hover {
+  background-color: #f3f3f3;
+}
+.table--search-result.dark-mode-active, .dark-mode-active.table--result-boss {
+  border: 2px solid #34474f;
+  background-color: #011518;
+  border-bottom: none;
+}
+.table--search-result.dark-mode-active tr, .dark-mode-active.table--result-boss tr {
+  background-color: #34474f;
+}
+.table--search-result.dark-mode-active td, .dark-mode-active.table--result-boss td {
+  border-bottom: 2px solid #34474f;
+}
+.table--search-result.dark-mode-active tbody:hover, .dark-mode-active.table--result-boss tbody:hover {
+  background-color: rgba(59, 73, 80, 0.4392156863);
+}
+
+.table--result-boss {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  border: 2px solid #12bd75;
+  background-color: #f2fffa;
+  contain: content;
+}
+.table--result-boss td {
+  border-bottom: none;
+}
+.table--result-boss.dark-mode-active {
+  border: 2px solid #009959;
+}/*# sourceMappingURL=main.css.map */
